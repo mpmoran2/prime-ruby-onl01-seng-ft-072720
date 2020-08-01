@@ -1,15 +1,13 @@
-def prime?(x)
-  if x == 1
-    return true 
-  elsif x < 1
+def prime?(value)
+  if value <= 1 || value == 0 || value == 1 #what are primes. what values looing for
     return false
-  else
-  for y in 2..(x-1)
-    if (x % y) == 0
-      return false 
+  elsif
+    (2..value - 1).each do |i|
+      if value % i == 0
+      return false
     end
-  end 
+  end
+end
+true  
 end
 
-  true
-end
